@@ -41,11 +41,11 @@ if 'history' not in st.session_state:
 if 'user_question' not in st.session_state:
     st.session_state.user_question = ""  # Inicializar la pregunta
 
-# Entrada de usuario
-user_question = st.text_input("Pregunta", value=st.session_state.user_question)
+# Entrada de usuario (usando el componente chat_input)
+user_question = st.chat_input("Pregunta", key="chat_input")
 
 # Procesar la pregunta del usuario
-if st.button("Enviar"):
+if user_question:
     if user_question.strip():  # Solo si la pregunta no está vacía
         answers = get_answer(user_question)
         st.session_state.history.append((user_question, answers))
