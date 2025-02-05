@@ -28,9 +28,11 @@ def get_answer(question):
 st.title("Chatbot de Restaurante Andy 🍕🍜")
 st.write("""Esto es un chatbot para un restaurante de comida asiática y española. Si tiene alguna consulta, no dudes en preguntar. 🍣🥗  
     Por ejemplo:  
-    - ¿Ofrecen opciones de menús degustación?  
-    - ¿Ofrecen servicio de entrega a domicilio?  
-    - ¿Ofrecen opciones para personas con alergias alimentarias?  
+    - ¿Ofrecen opciones de menús degustación?    
+    - ¿Ofrecen servicio de entrega a domicilio?    
+    - ¿Ofrecen opciones para personas con alergias alimentarias?   
+    - ¿Dónde puedo obtener más información sobre alergias alimentarias?    
+    - ¿Dónde puedo consultar los derechos del consumidor?   
 """)
 
 # Historial de conversación
